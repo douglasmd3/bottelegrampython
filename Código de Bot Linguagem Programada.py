@@ -37,7 +37,7 @@ class TelBot:
     if FirstMessage == True:
       return f'''Olá, digite "menu" e veja as opções de atendimento'''
 
-# em menu não coloquei opções de número e sim strings para não ter conflito com um submenu já existente numérico(linha 58/59) que responde a opção -> fones e o número retorna a linha do arquivo contatos.txt;     
+# em menu não coloquei opções de número e sim strings para não ter conflito com um submenu já existente numérico(linha 59/60) que responde a opção -> fones e o número retorna a linha do arquivo contatos.txt;     
     if posts.lower() == 'menu':
       return f'''digite os seguintes comandos:{os.linesep}"fones" - para visualizar os contatos institucionais{os.linesep}"chat" - para visualizar/conversar com pessoal atendente no telegram{os.linesep}"outros" - para sugestão de criação de outros comandos de atendimento'''
 
@@ -45,6 +45,8 @@ class TelBot:
       return f'''Segue a lista de Contatos dos Setores Institucionais{os.linesep}Por Favor insira o dígito correspondente ao contato do setor desejado.{os.linesep}\n0 - Coordenação de Administração Escolar|COADES/SGA{os.linesep}\n1 - Coordenação de Atividades Estudantis|COAES/SGA{os.linesep}\n2 - Coordenação de Apoio Acadêmico|COAPAC/SGA{os.linesep}\n3 - Coordenação de Comunicação Social e Eventos|COCSEV/SGA{os.linesep}\n4 - Coordenação de Extensão|COEX/SGA{os.linesep}\n5 - Coordenação de Finanças e Contratos|COFINC/SGA{os.linesep}\n6 - Coordenação de Gestão de Pessoas|COGPE/SGA{os.linesep}\n7 - Coordenação de Laboratórios|COLAB/SGA{os.linesep}\n8 - Coordenação de Material e Patrimônio|COMPAT/SGA{os.linesep}\n9 - Coordenação de Multimeios|COMULT/SGA{os.linesep}\n10 - CONSELHO ESCOLAR DO CAMPUS SÃO GONÇALO DO AMARANTE|CONSESC/SGA{os.linesep}\n11 - Coordenação de Pesquisa e Inovação|COPEIN/SGA{os.linesep}\n12 - Coordenação de Serviços Gerais e Manutenção|COSGEM/SGA{os.linesep}\n13 - Coordenação de Tecnologia da Informação|CTI/SGA{os.linesep}\n14 - DIREÇÃO-GERAL DO CAMPUS SÃO GONÇALO DO AMARANTE|DG/SGA{os.linesep}\n15 - Diretoria Acadêmica|DIAC/SGA{os.linesep}\n16 - Diretoria de Administração|DIAD/SGA{os.linesep}\n17 - Gabinete|GABIN/SGA{os.linesep}\n18 - Secretaria Acadêmica|SEAC/SGA'''
 
 # ok está quase do jeito desejado - imprimir todas as opções sem formato de discionário - corrigir essa bagaça - intenção é trazer do arquivo chat.txt todo o conteúdo, não conseguir ainda no formato desejado;
+# o arquivo chat.txt tem um única linha, não conseguir colocar de forma organizada as linhas como o arquivo contato.txt, pois irá imprimir a primeira linha e não retornará todas elas que é a intenção.
+
     if posts.lower() == 'chat':
       arquivo = open("chat.txt", "r", encoding='utf-8')
       for i in arquivo.readlines()[0:2]:
