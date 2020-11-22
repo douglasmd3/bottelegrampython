@@ -29,4 +29,6 @@ from chatterbot.trainers import ListTrainer
 dúvidas relacionadas a comandos e passos de programação de bot: https://chatterbot.readthedocs.io/en/stable/
 
 
-Dúvida: L1 em Código de linguagem natural - 
+Dúvida: L1 em Código de linguagem natural - arquivo de código de bot para telegram com liguangem natural ainda em andamento, objetivando juntar ao código de linguagem programada em arquivo igual ou diferente e importar, a definir como será a melhor programação. dúvida e problema, ambos os códigos dever ser executados e, interagindo com o usuário definir os critérios e prioridades para retornar do código os pontos de linguagem natural ou programada... 
+
+quando retornar ao usuário o cod em ligua natural ou programada?
