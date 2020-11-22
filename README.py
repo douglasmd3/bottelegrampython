@@ -1,3 +1,4 @@
+# Bot de linguagem programada - menu
 import requests
 import time
 import json
