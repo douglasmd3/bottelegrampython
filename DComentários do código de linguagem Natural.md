@@ -28,3 +28,5 @@ from chatterbot.trainers import ListTrainer
 
 dúvidas relacionadas a comandos e passos de programação de bot: https://chatterbot.readthedocs.io/en/stable/
 
+
+Dúvida: L1 em Código de linguagem natural - 
