@@ -13,7 +13,13 @@ para corrigir dependência e reconhecer os modos de apredizado ou comandos para 
 comandos iniciais no shell linux:
 
 [sudo] pip3 install telepot chatterbot
+
+teste para o comando telepot: no próprio shell digite python3 para entrar no shell pythonv3, em seguida import telepot, se não vir nenhum erro, então a instalação dessa biblioteca esta feita.
+por final, exit() e enter que sairá do shell py.
+
 [sudo] pip3 install -U spacy
+[sudo] python3 -m spacy download en
+[sudo] python3 -m spacy download pt
 
 isso para que seja reconhecida no código o módulo de aprendizado chatterbot para as linhas:
 import telebot
