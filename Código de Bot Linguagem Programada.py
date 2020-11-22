@@ -55,6 +55,7 @@ class TelBot:
       return f'''outros para sugestão de criação de outros comandos de atendimento - comando sem código programado...'''# outras opções de menu;
 
 # problema no posts, se posts for string(é uma string no código, mas nessa parte precisa retornar como int - numero da linha do arquivo para retornar o resultado - acha que é uma gambiarra não sei se é problema) como passar por aki...(essa parte do programa) ou numero fora do intervalo de linhas do arquivo contatos.txt dará erro...a linha não existe que resultado trazer?
+#(RESOLVIDO - coloquei as opções separadamente como string e convertento na parte do código um int), estava pondo um intervalo (posts >= 0 or posts <= 18), mas não conseguir converter isso como int;
     if posts == '0' or posts == '1' or posts == '2' or posts == '3' or posts == '4' or posts == '5' or posts == '6' or posts == '7' or posts == '8' or posts == '9' or posts == '10' or posts == '11' or posts == '12' or posts == '13' or posts == '14' or posts == '15' or posts == '16' or posts == '17' or posts == '18' or posts == '19' :
       arquivo = open("contatos.txt", "r", encoding='utf-8')
       A = arquivo.readlines()[int(posts)]
