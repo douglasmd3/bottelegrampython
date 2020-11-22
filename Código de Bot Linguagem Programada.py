@@ -1,3 +1,4 @@
+# a ideia de trazer os resultados do menu por um arquivo externo (txt) é evitar o excesso de strigs no código e, conseguentemente sua extensão L48/49 e L60/61.
 # Bot de linguagem programada - (menu)
 
 import requests
@@ -37,7 +38,7 @@ class TelBot:
     if FirstMessage == True:
       return f'''Olá, digite "menu" e veja as opções de atendimento'''
 
-# em menu não coloquei opções de número e sim strings para não ter conflito com um submenu já existente numérico(linha 59/60) que responde a opção -> fones e o número retorna a linha do arquivo contatos.txt;     
+# em menu não coloquei opções de número e sim strings para não ter conflito com um submenu já existente numérico(linha 60/61) que responde a opção -> fones e o número retorna a linha do arquivo contatos.txt;     
     if posts.lower() == 'menu':
       return f'''digite os seguintes comandos:{os.linesep}"fones" - para visualizar os contatos institucionais{os.linesep}"chat" - para visualizar/conversar com pessoal atendente no telegram{os.linesep}"outros" - para sugestão de criação de outros comandos de atendimento'''
 
