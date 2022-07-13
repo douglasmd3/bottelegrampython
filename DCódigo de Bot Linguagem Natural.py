@@ -20,7 +20,7 @@ Arquivo = open("Treinamento.txt","r").readlines()
 trainer.train(Arquivo)
 
 
-token = telepot.Bot("1461971673:AAFCplUD52RZEU2tM47b0Mr1Xf8AmKxjZts")
+token = telepot.Bot("token")
 
 print ("\nExecutando o Código...Good Luck\n")
 
