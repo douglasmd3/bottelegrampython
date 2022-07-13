@@ -9,7 +9,7 @@ import os
 class TelBot:
   
   def __init__(self):
-    token = '1461971673:AAFCplUD52RZEU2tM47b0Mr1Xf8AmKxjZts'
+    token = 'token'
     self.url_telegram = f'https://api.telegram.org/bot{token}/'
 
   def StartBot(self):
